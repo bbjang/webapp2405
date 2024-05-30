@@ -2,6 +2,7 @@
 # pip install langchain
 import streamlit as st
 from langchain_community.llms import OpenAI
+from PyPDF2 import PdfFileReader
 
 st.title('🍎🍐🍊 나의 AI Chat 🥝🍅🍆')
 
@@ -23,7 +24,7 @@ def generate_response(input_text):
 
 
 
-from PyPDF2 import PdfFileReader
+
 
 def extract_text_from_pdf(uploaded_file):
     text = ""
